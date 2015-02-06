@@ -1,0 +1,33 @@
+{
+  "name": "gulp-macshop",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-cache": "^0.2.4",
+    "gulp-cached": "^1.0.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jade": "^0.11.0",
+    "gulp-livereload": "^3.2.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-notify": "^2.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "opn": "^1.0.1",
+    "wiredep": "^2.2.2"
+  },
+  "description": "Разработать сервис генерации вотермарков",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/al4code/loftschool_home_work_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wiredep": "^2.2.2"
+  }
+}

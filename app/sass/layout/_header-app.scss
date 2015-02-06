@@ -1,0 +1,26 @@
+.header-app{
+  width: 800px;
+  margin: 0 auto;
+}
+
+//
+.switch-btn{
+  width: 30px;
+  height: 26px;
+  display: inline-block;
+
+}
+.sort-table{
+  background: transparent url('../images/btn-icons.png') no-repeat 0 0;
+  &:hover{
+    background: transparent url('../images/btn-icons.png') no-repeat 0 -35px;
+  }
+}
+.sort-line{
+  margin-left: 10px;
+  background: transparent url('../images/btn-icons.png') no-repeat -35px -35px;
+  &:hover{
+    background: transparent url('../images/btn-icons.png') no-repeat -35px -0px;
+
+  }
+}
