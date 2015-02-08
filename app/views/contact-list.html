@@ -1,0 +1,38 @@
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center text-uppercase">Контакты</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="header-app">
+        <button class="btn-primary pull-left">Добавить</button>
+        <div class="pull-right"><a ng-click="showGrid=false" class="sort-table switch-btn"></a>
+            <a
+                    ng-click="showGrid=true"
+                    class="sort-line switch-btn">
+                <div class="row"></div>
+            </a></div>
+    </div>
+    <table ng-hide="showGrid" class="table table-hover contact-table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="data in datas">
+            <td>{{$index+1}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.surname}}</td>
+            <td>{{data.phone}}</td>
+            <td>{{data.email}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <div ng-hide="val" class="row"></div>
+</div>
