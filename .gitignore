@@ -48,6 +48,6 @@ crashlytics.properties
 crashlytics-build.properties
 
 
-
-app/components
 node_modules
+.sass-cache
+app/components
