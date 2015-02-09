@@ -1,6 +1,26 @@
-.contact-table{
+.contact-table, .addPerson, .contacts{
   border-radius: 4px;
   background-color:  rgba(255, 255, 255, 0.74);
   width: 800px;
   margin: 0 auto;
+}
+.contacts__add-form {
+  width: 595px;
+  margin: 0 auto;
+}
+
+.form-control {
+width: 242px;
+height: 38px;
+}
+
+.item-boom{
+  display: inline-block;
+}
+.img-avatar{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 130px;
+  width: 130px;
+  margin: 15px 15px 0px 15px;
 }

@@ -1,6 +1,13 @@
-<tr>
-    <td>{{$index+1}}</td>
-    <td>{{contact.name}}</td>
-    <td>{{contact.phone}}</td>
-    <td>{{contact.email}}</td>
-</tr>
+<div class="container">
+    <div class="row">
+        <div ng-repeat="data in datas" class="contact contacts_left">
+            <div class="contact-image">
+                <img ng-src="{{data.thumb}}" alt=""/>
+
+                <div class="contact__name">{{data.name;data.surname}}</div>
+                <div class="contact__phone">{{data.phone}}</div>
+                <div class="contact__email">{{data.email}}</div>
+            </div>
+        </div>
+    </div>
+</div>

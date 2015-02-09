@@ -1,26 +1,51 @@
-.header-app{
+.header-app {
   width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+
 }
 
 //
-.switch-btn{
+.switch-btn {
   width: 30px;
   height: 26px;
   display: inline-block;
 
 }
-.sort-table{
+
+.sort-table {
   background: transparent url('../images/btn-icons.png') no-repeat 0 0;
-  &:hover{
+  &:hover {
     background: transparent url('../images/btn-icons.png') no-repeat 0 -35px;
   }
 }
-.sort-line{
+
+.sort-line {
   margin-left: 10px;
   background: transparent url('../images/btn-icons.png') no-repeat -35px -35px;
-  &:hover{
+  &:hover {
     background: transparent url('../images/btn-icons.png') no-repeat -35px -0px;
 
   }
+}
+
+.btn-back {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: transparent url('../images/btn-icons.png') no-repeat -120px 0px;
+  &:hover {
+    background: transparent url('../images/btn-icons.png') no-repeat -120px -35px;
+  }
+}
+.icon--email, .icon--phone{
+  display: block;
+  width: 16px;
+  height: 24px;
+
+}
+.icon--email {
+  background: transparent url("../images/btn-icons.png") no-repeat -73px center;
+}
+.icon--phone{
+  background: transparent url("../images/btn-icons.png") no-repeat -94px center;
 }

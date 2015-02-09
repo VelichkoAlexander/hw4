@@ -1,0 +1,118 @@
+.contacts__add-form {
+	margin: 0 auto;
+	width: 595px;
+}
+
+.block--avatar {
+	float: left;
+	margin: 44px 0;
+	width: 200px;
+
+} 
+
+.add-form {
+	&#{__avatar} {
+		position: relative;
+		overflow: hidden;
+		margin: 0 0 ;
+		width: 100%;
+		height: 198px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+      margin-bottom: 15px;
+	}
+
+	&#{__send} {
+		position: relative;
+		overflow: hidden;
+		height: 35px;
+
+		
+		&.align-center {
+			text-align: center;
+		}
+	}
+}
+
+.avatar__image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+
+}
+
+.btn--submit {
+	float: left;
+}
+
+.btn-delete {
+	float: right;
+}
+
+.btn--edit {
+	@at-root .align-center & {
+		position: static;
+		display: inline-block;
+		transform: none;
+	}
+
+	position: absolute;
+	left: 50%;
+	transform: translate3d(-50%, 0,0);
+}
+
+.block--inputs {
+	float: right;
+	width: 268px;
+}
+
+.form-control {
+	height: 38px;
+	width: 242px;
+
+	@at-root .input-group & {
+		width: 201px;
+	}
+}
+
+
+.form-group {
+	position: relative;
+	
+	.text-error {
+		position: absolute;
+		top: 0;	
+		left: 20%;
+		padding: 0 ;
+		margin:  0 0 ;
+		height: 16px;
+		olor: white;
+		font-size: 1.2rem;
+		line-height: 16px;
+		white-space: nowrap;
+		opacity: 0;
+		transition: all .25s ease-in-out;
+
+		&.ng-scope {
+			opacity: 1;
+		}
+	}
+}
+
+.submit-success {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.delete-success {
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.form-control[readonly] {
+	font-weight: bold;
+}

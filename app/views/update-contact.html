@@ -1,0 +1,60 @@
+<div class="conteiner" ng-controller="AddCtr">
+    <div class="row ">
+        <h2 class="text-center text-uppercase">Контакт</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="header-app">
+        <a class="btn-primary btn-back" href="#/"></a>
+    </div>
+    <div class="row addPerson">
+        <div class="contacts">
+            <form class="contacts__add-form" name="addContactForm" >
+                <p class="delete-success text-center" ng-hide="true">Данные контакта указаны неверно</p>
+                <p class="submit-success error-text text-center" ng-hide="true">Контакт добавлен</p>
+                <fieldset class="add-form__block block--avatar">
+                    <div class="add-form__avatar"><img src="images/thumb-big.jpg" alt="" class="avatar__image"/>
+                    </div>
+                    <div class="add-form__send">
+                        <button class="btn btn-default btn--submit" type="submit" ng-click="updatePerson(person)"
+                                >Сохранить
+                        </button>
+                        <button class="btn btn-default btn-delete" ng-click="delPerson()"
+                                >Удалить
+                        </button>
+
+                    </div>
+                </fieldset>
+                <fieldset class="add-form__block block--inputs">
+                    <div class="form-group">
+                        <label for="contact-name" class="h5"><strong>Имя </strong></label>
+                        <input required="required" class="form-control" type="text" name="contact-name"
+                               id="contact-name" placeholder="Имя контакта" ng-model="person.name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname-input" class="h5"><strong>Фамилия</strong></label>
+                        <input required="required" class="form-control" type="text" name="contact-name"
+                               id="surname-input" placeholder="Фамилия контакта" ng-model="person.surname"/>
+                    </div>
+                    <div>
+                        <p class="h5"><strong>Контактаня информация</strong></p>
+
+                        <div class="input-group form-group">
+                            <label for="contact-email" class="input-group-addon"><span
+                                    class="icon--email"></span></label>
+                            <input required="required" class="form-control" type="email" name="contact-email" ng-model="person.email"
+                                   id="contact-email" placeholder="yourmail@gmail.com"
+                                   ng-pattern="/[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm"/>
+                        </div>
+                        <div class="input-group form-group">
+                            <label for="contact-phone" class="input-group-addon"><span
+                                    class="icon--phone"></span></label>
+                            <input class="form-control" type="tel" name="contact-phone" id="contact-phone"
+                                   placeholder="+7 911 123 4566" ng-model="person.phone"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
